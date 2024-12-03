@@ -27,7 +27,7 @@ app.post('/create_new_student_info',async(req,res)=>{
         [name,email,password, student_id]
     );
 
-    res.status(201).json({message:"Student Information Created",info: query.rows[0]})
+    res.status(201).json({message:"Entry has been made",info: query.rows[0]})
 })
 
 app.get('/get_students_info',async(req,res)=>{
